@@ -18,8 +18,12 @@ public class MessegeSenderApplication {
 	@InboundChannelAdapter(Source.OUTPUT)
 	public Greeting getMessage() {
 		Greeting greeting = new Greeting();
+<<<<<<< HEAD
 		greeting.setGreeting("Helloo " + System.currentTimeMillis());
 		
+=======
+		greeting.setGreeting("Hello " + System.currentTimeMillis());
+>>>>>>> 8db29a7e7b062ddc1ad640742677a3e1ccd66375
 		return greeting;
 	}
 	

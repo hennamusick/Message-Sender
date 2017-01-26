@@ -40,7 +40,10 @@
 			<artifactId>lombok</artifactId>
 			<optional>true</optional>
 		</dependency>
+<<<<<<< HEAD
 	
+=======
+>>>>>>> 8db29a7e7b062ddc1ad640742677a3e1ccd66375
 	</dependencies>
 
 	<dependencyManagement>
