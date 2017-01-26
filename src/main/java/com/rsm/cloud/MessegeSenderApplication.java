@@ -16,7 +16,17 @@ public class MessegeSenderApplication {
 	}
 	
 	@InboundChannelAdapter(Source.OUTPUT)
-	public String getMessage() {
-		return "Hello" + System.currentTimeMillis();
+	public Greeting getMessage() {
+		Greeting greeting = new Greeting();
+		greeting.setGreeting("Helloo " + System.currentTimeMillis());
+		
+		return greeting;
 	}
+	
+	
+	/*@InboundChannelAdapter(Source.OUTPUT)
+	public String getMessage() {
+		
+		return "hello  " + System.currentTimeMillis();
+	}*/
 }
